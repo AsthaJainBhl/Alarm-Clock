@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div class="header">ALARM CLOCK</div>
+    <div class="mainwrapper">
+    <div id="time" class="clock"></div>
+    <div class="alarm">
+    <select id="alarmHour">00</select>
+    <select id="alarmMinute"></select>
+    <select id="alarmSecond"></select>
+    <select id="amPm">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+    </select>
+    <button id="setAlarm">Set Alarm</button>
+</div>
+    <div class="alarms">
+        <h2>Alarms List</h2>
+        <ul id="alarmsList"></ul>
+    </div>
+    <audio id="alarmSound" autoplay="false">
+    <source src="alarm-clock-sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
